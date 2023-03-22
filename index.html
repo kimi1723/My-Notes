@@ -1,14 +1,65 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MyNotes</title>
+
+    <link rel="stylesheet" href="/dist/css/main.min.css">
+    <script src="https://kit.fontawesome.com/b106b5fdab.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
+    <nav class="nav">
+        <h1 class="nav__heading">MyNotes</h1>
+
+        <div class="nav-buttons">
+            <button class="nav-buttons__add-btn nav-buttons__icon"><i class="fa-solid fa-plus"></i> Add</button>
+            <button class="nav-buttons__delete-all-btn nav-buttons__icon"><i class="fa-solid fa-trash-can"></i> Delete
+                all</button>
+        </div>
+    </nav>
+
+    <div class="note-area">
+        <div class="note-header">
+            <h3 class="note-header__title">Note #1</h3>
+            <button class="note-header__delete-note"><i class="fa-solid fa-xmark"></i> Delete</button>
+        </div>
+
+        <div class="note-body">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur laudantium nisi assumenda ipsam
+            labore? Facere, impedit tenetur, aspernatur debitis id voluptas esse aliquam distinctio optio aliquid culpa
+            blanditiis deleniti ex.
+        </div>
+    </div>
+
+    <div class="note-panel">
+        <h2 class="note-panel__heading">Add note</h2>
+
+        <label for="category">Choose category</label>
+        <select id="category">
+            <option value="0" disabled selected>- choose category -</option>
+            <option value="1">Shopping</option>
+            <option value="1">Work</option>
+            <option value="1">Gym</option>
+            <option value="1">Personal</option>
+            <option value="1">Other</option>
+        </select>
+
+        <label for="text">Write the note text</label>
+        <textarea id="text"></textarea>
+
+        <p class="note-panel__error">Fill every fild!</p>
+
+        <div class="note-panel__buttons">
+            <button class="note-panel__buttons-save icon"><i class="fa-solid fa-floppy-disk"></i> Save</button>
+            <button class="note-panel__buttons-cancel icon"><i class="fa-solid fa-circle-xmark"></i> Cancel</button>
+        </div>
+    </div>
+
 
     <script src="/dist/js/app.min.js"></script>
 </body>
