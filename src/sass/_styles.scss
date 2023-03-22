@@ -1,3 +1,136 @@
 body {
-	background-color: #000;
+	min-height: 100vh;
+	background-color: rgb(243, 243, 243);
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px;
+	height: 120px;
+}
+
+.nav-buttons__add-btn,
+.nav-buttons__delete-all-btn,
+.note-panel__buttons-save,
+.note-panel__buttons-cancel {
+	padding: 12px 25px;
+	background: none;
+	border: 1px solid #999;
+	border-radius: 5px;
+	font-size: 14px;
+	transition: background-color 0.3s, color 0.3s;
+	cursor: pointer;
+
+	&:hover {
+		background-color: #333;
+		color: #ddd;
+	}
+}
+
+.nav-buttons__add-btn {
+	margin-right: 20px;
+}
+
+.icon {
+	margin-right: 10px;
+}
+
+.add {
+	margin-right: 20px;
+}
+
+.note-area {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	padding: 20px;
+}
+
+.note {
+	margin: 40px 20px;
+	width: 240px;
+	background-color: rgb(255, 243, 0);
+	border: 1px solid black;
+
+	&-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px;
+		background-color: rgba(0, 0, 0, 0.06);
+
+		&__delete-note {
+			background: none;
+			font-size: 20px;
+			border: none;
+			cursor: pointer;
+		}
+	}
+
+	&-body {
+		padding: 20px 15px;
+		font-size: 14px;
+	}
+
+	&-panel {
+		// display: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 40px 0;
+		width: 600px;
+		background-color: #fff;
+		box-shadow: 0 0 10px black;
+		border-radius: 5px;
+
+		&__heading {
+			margin-bottom: 20px;
+			text-transform: uppercase;
+		}
+
+		label {
+			margin-bottom: 10px;
+		}
+
+		&__text,
+		&__category {
+			margin-bottom: 20px;
+			padding: 10px 20px;
+			width: 100%;
+			max-width: 90%;
+			max-height: 600px;
+			font-size: 16px;
+			border-radius: 5px;
+			border: 1px solid black;
+			transition: background-color 0.3s, color 0.3s;
+
+			&:hover,
+			&:focus {
+				color: rgb(0, 0, 0);
+				background-color: rgb(238, 235, 235);
+			}
+		}
+
+		&__category {
+			cursor: pointer;
+		}
+
+		&__text {
+			resize: vertical;
+		}
+
+		&__error {
+			margin-bottom: 20px;
+			font-weight: bold;
+			color: red;
+			visibility: hidden;
+		}
+	}
 }
