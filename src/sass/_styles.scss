@@ -75,7 +75,6 @@ body {
 	}
 
 	&-panel {
-		// display: none;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -87,8 +86,12 @@ body {
 		padding: 40px 0;
 		width: 600px;
 		background-color: #fff;
-		box-shadow: 0 0 10px black;
+		box-shadow: 0 0 10px #000;
 		border-radius: 5px;
+
+		&--hidden {
+			display: none;
+		}
 
 		&__heading {
 			margin-bottom: 20px;
@@ -108,12 +111,12 @@ body {
 			max-height: 600px;
 			font-size: 16px;
 			border-radius: 5px;
-			border: 1px solid black;
+			border: 1px solid #000;
 			transition: background-color 0.3s, color 0.3s;
 
 			&:hover,
 			&:focus {
-				color: rgb(0, 0, 0);
+				color: #000;
 				background-color: rgb(238, 235, 235);
 			}
 		}
@@ -129,8 +132,11 @@ body {
 		&__error {
 			margin-bottom: 20px;
 			font-weight: bold;
-			color: red;
-			visibility: hidden;
+			color: #f00;
+
+			&--hidden {
+				visibility: hidden;
+			}
 		}
 	}
 }
