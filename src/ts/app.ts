@@ -9,7 +9,7 @@ const notePanelCategory: HTMLSelectElement = document.querySelector('.note-panel
 const notePanelTextarea: HTMLSelectElement = document.querySelector('.note-panel__text')!;
 const notePanelError: HTMLParagraphElement = document.querySelector('.note-panel__error')!;
 
-let selectedCategory, cardID;
+let selectedCategory, noteID: number | string;
 
 const openNotePanel = () => {
 	notePanel.classList.remove('note-panel--hidden');
@@ -21,21 +21,30 @@ const closeNotePanel = () => {
 	notePanelTextarea.value = '';
 	notePanelCategory.selectedIndex = 0;
 };
-const handleNoteAddition = () => {
-	const noteArea: HTMLDivElement = document.querySelector('.note-area')!;
-	const newNote: HTMLDivElement = document.createElement('div');
-
+const handleNote = () => {
 	if (
 		notePanelTextarea.value !== '' &&
 		Number(notePanelCategory.options[notePanelCategory.selectedIndex].value) !== 0
 	) {
+		createNote();
 		notePanelError.classList.add('note-panel__error--hidden');
 	} else {
 		notePanelError.classList.remove('note-panel__error--hidden');
 	}
+};
 
+const createNote = () => {
+	const noteArea: HTMLDivElement = document.querySelector('.note-area')!;
+	const newNote: HTMLDivElement = document.createElement('div');
+	const noteHeader: HTMLDivElement = document.createElement('div');
+
+	newNote.classList.add('note');
+	newNote.setAttribute('data-id', noteID);
+
+	newNote.append(noteHeader);
 	noteArea.append(newNote);
 };
 
 addNoteBtn.addEventListener('click', openNotePanel);
 cancelNoteBtn.addEventListener('click', closeNotePanel);
+saveNoteBtn.addEventListener('click', handleNote);
