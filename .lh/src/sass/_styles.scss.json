@@ -1,0 +1,58 @@
+{
+    "sourceFile": "src/sass/_styles.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 10,
+            "patches": [
+                {
+                    "date": 1679954123129,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1679954202116,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n \tbackground-color: rgb(255, 243, 0);\r\n \tborder: 1px solid black;\r\n \r\n \t&--shopping {\r\n-\t\t\r\n+\t\tbackground-color: rgb(72,255,0);\r\n \t}\r\n \r\n \t&-header {\r\n \t\tdisplay: flex;\r\n"
+                },
+                {
+                    "date": 1679954210818,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,8 +56,20 @@\n \r\n \t&--shopping {\r\n \t\tbackground-color: rgb(72,255,0);\r\n \t}\r\n+\t&--work {\r\n+\t\tbackground-color: rgb(72,255,0);\r\n+\t}\r\n+\t&--shopping {\r\n+\t\tbackground-color: rgb(72,255,0);\r\n+\t}\r\n+\t&--shopping {\r\n+\t\tbackground-color: rgb(72,255,0);\r\n+\t}\r\n+\t&--shopping {\r\n+\t\tbackground-color: rgb(72,255,0);\r\n+\t}\r\n \r\n \t&-header {\r\n \t\tdisplay: flex;\r\n \t\tjustify-content: space-between;\r\n"
+                },
+                {
+                    "date": 1679954292283,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n \t&--shopping {\r\n \t\tbackground-color: rgb(72,255,0);\r\n \t}\r\n \t&--work {\r\n-\t\tbackground-color: rgb(72,255,0);\r\n+\t\tbackground-color: rgb(255,243,0);\r\n \t}\r\n \t&--shopping {\r\n \t\tbackground-color: rgb(72,255,0);\r\n \t}\r\n"
+                },
+                {
+                    "date": 1679954297457,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n \t&--work {\r\n \t\tbackground-color: rgb(255,243,0);\r\n \t}\r\n \t&--shopping {\r\n-\t\tbackground-color: rgb(72,255,0);\r\n+\t\tbackground-color: rgb(0,170,255);\r\n \t}\r\n \t&--shopping {\r\n \t\tbackground-color: rgb(72,255,0);\r\n \t}\r\n"
+                },
+                {
+                    "date": 1679954304446,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n \t&--shopping {\r\n \t\tbackground-color: rgb(0,170,255);\r\n \t}\r\n \t&--shopping {\r\n-\t\tbackground-color: rgb(72,255,0);\r\n+\t\tbackground-color: rgb();\r\n \t}\r\n \t&--shopping {\r\n \t\tbackground-color: rgb(72,255,0);\r\n \t}\r\n"
+                },
+                {
+                    "date": 1679954313513,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n \t&--shopping {\r\n \t\tbackground-color: rgb(0,170,255);\r\n \t}\r\n \t&--shopping {\r\n-\t\tbackground-color: rgb();\r\n+\t\tbackground-color: rgb(244, 136, 12);\r\n \t}\r\n \t&--shopping {\r\n \t\tbackground-color: rgb(72,255,0);\r\n \t}\r\n"
+                },
+                {
+                    "date": 1679954322747,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,13 +59,13 @@\n \t}\r\n \t&--work {\r\n \t\tbackground-color: rgb(255,243,0);\r\n \t}\r\n-\t&--shopping {\r\n+\t&--gym {\r\n \t\tbackground-color: rgb(0,170,255);\r\n \t}\r\n \t&--shopping {\r\n-\t\tbackground-color: rgb(244, 136, 12);\r\n+\t\tbackground-color: rgb(228, 91, 12);\r\n \t}\r\n \t&--shopping {\r\n \t\tbackground-color: rgb(72,255,0);\r\n \t}\r\n"
+                },
+                {
+                    "date": 1679954350335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,17 +56,21 @@\n \r\n \t&--shopping {\r\n \t\tbackground-color: rgb(72,255,0);\r\n \t}\r\n+\r\n \t&--work {\r\n \t\tbackground-color: rgb(255,243,0);\r\n \t}\r\n+\r\n \t&--gym {\r\n \t\tbackground-color: rgb(0,170,255);\r\n \t}\r\n-\t&--shopping {\r\n+\r\n+\t&--personal {\r\n \t\tbackground-color: rgb(228, 91, 12);\r\n \t}\r\n+\r\n \t&--shopping {\r\n \t\tbackground-color: rgb(72,255,0);\r\n \t}\r\n \r\n"
+                },
+                {
+                    "date": 1679954355930,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,12 +69,10 @@\n \t&--personal {\r\n \t\tbackground-color: rgb(228, 91, 12);\r\n \t}\r\n \r\n-\t&--shopping {\r\n-\t\tbackground-color: rgb(72,255,0);\r\n-\t}\r\n \r\n+\r\n \t&-header {\r\n \t\tdisplay: flex;\r\n \t\tjustify-content: space-between;\r\n \t\talign-items: center;\r\n"
+                },
+                {
+                    "date": 1679954362952,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,10 +69,12 @@\n \t&--personal {\r\n \t\tbackground-color: rgb(228, 91, 12);\r\n \t}\r\n \r\n+\t&--other {\r\n+\t\tbackground-color: rgb(183, 0, 255);\r\n+\t}\r\n \r\n-\r\n \t&-header {\r\n \t\tdisplay: flex;\r\n \t\tjustify-content: space-between;\r\n \t\talign-items: center;\r\n"
+                }
+            ],
+            "date": 1679954123129,
+            "name": "Commit-0",
+            "content": "body {\r\n\tmin-height: 100vh;\r\n\tbackground-color: rgb(243, 243, 243);\r\n}\r\n\r\n.nav {\r\n\tdisplay: flex;\r\n\tjustify-content: space-between;\r\n\talign-items: center;\r\n\tpadding: 40px;\r\n\theight: 120px;\r\n}\r\n\r\n.nav-buttons__add-btn,\r\n.nav-buttons__delete-all-btn,\r\n.note-panel__buttons-save,\r\n.note-panel__buttons-cancel {\r\n\tpadding: 12px 25px;\r\n\tbackground: none;\r\n\tborder: 1px solid #999;\r\n\tborder-radius: 5px;\r\n\tfont-size: 14px;\r\n\ttransition: background-color 0.3s, color 0.3s;\r\n\tcursor: pointer;\r\n\r\n\t&:hover {\r\n\t\tbackground-color: #333;\r\n\t\tcolor: #ddd;\r\n\t}\r\n}\r\n\r\n.nav-buttons__add-btn {\r\n\tmargin-right: 20px;\r\n}\r\n\r\n.icon {\r\n\tmargin-right: 10px;\r\n}\r\n\r\n.add {\r\n\tmargin-right: 20px;\r\n}\r\n\r\n.note-area {\r\n\tdisplay: flex;\r\n\talign-items: flex-start;\r\n\tflex-wrap: wrap;\r\n\tpadding: 20px;\r\n}\r\n\r\n.note {\r\n\tmargin: 40px 20px;\r\n\twidth: 240px;\r\n\tbackground-color: rgb(255, 243, 0);\r\n\tborder: 1px solid black;\r\n\r\n\t&--shopping {\r\n\t\t\r\n\t}\r\n\r\n\t&-header {\r\n\t\tdisplay: flex;\r\n\t\tjustify-content: space-between;\r\n\t\talign-items: center;\r\n\t\tpadding: 20px;\r\n\t\tbackground-color: rgba(0, 0, 0, 0.06);\r\n\r\n\t\t&__delete-note {\r\n\t\t\tbackground: none;\r\n\t\t\tfont-size: 20px;\r\n\t\t\tborder: none;\r\n\t\t\tcursor: pointer;\r\n\t\t}\r\n\t}\r\n\r\n\t&-body {\r\n\t\tpadding: 20px 15px;\r\n\t\tfont-size: 14px;\r\n\t}\r\n\r\n\t&-panel {\r\n\t\tdisplay: flex;\r\n\t\tjustify-content: center;\r\n\t\talign-items: center;\r\n\t\tflex-direction: column;\r\n\t\tposition: absolute;\r\n\t\ttop: 50%;\r\n\t\tleft: 50%;\r\n\t\ttransform: translate(-50%, -50%);\r\n\t\tpadding: 40px 0;\r\n\t\twidth: 600px;\r\n\t\tbackground-color: #fff;\r\n\t\tbox-shadow: 0 0 10px #000;\r\n\t\tborder-radius: 5px;\r\n\r\n\t\t&--hidden {\r\n\t\t\tdisplay: none;\r\n\t\t}\r\n\r\n\t\t&__heading {\r\n\t\t\tmargin-bottom: 20px;\r\n\t\t\ttext-transform: uppercase;\r\n\t\t}\r\n\r\n\t\tlabel {\r\n\t\t\tmargin-bottom: 10px;\r\n\t\t}\r\n\r\n\t\t&__text,\r\n\t\t&__category {\r\n\t\t\tmargin-bottom: 20px;\r\n\t\t\tpadding: 10px 20px;\r\n\t\t\twidth: 100%;\r\n\t\t\tmax-width: 90%;\r\n\t\t\tmax-height: 600px;\r\n\t\t\tfont-size: 16px;\r\n\t\t\tborder-radius: 5px;\r\n\t\t\tborder: 1px solid #000;\r\n\t\t\ttransition: background-color 0.3s, color 0.3s;\r\n\r\n\t\t\t&:hover,\r\n\t\t\t&:focus {\r\n\t\t\t\tcolor: #000;\r\n\t\t\t\tbackground-color: rgb(238, 235, 235);\r\n\t\t\t}\r\n\t\t}\r\n\r\n\t\t&__category {\r\n\t\t\tcursor: pointer;\r\n\t\t}\r\n\r\n\t\t&__text {\r\n\t\t\tresize: vertical;\r\n\t\t}\r\n\r\n\t\t&__error {\r\n\t\t\tmargin-bottom: 20px;\r\n\t\t\tfont-weight: bold;\r\n\t\t\tcolor: #f00;\r\n\r\n\t\t\t&--hidden {\r\n\t\t\t\tvisibility: hidden;\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n}\r\n"
+        }
+    ]
+}

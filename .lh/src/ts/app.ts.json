@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/ts/app.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1679945428073,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1679945459855,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n const notePanelCategory: HTMLSelectElement = document.querySelector('.note-panel__category')!;\r\n const notePanelTextarea: HTMLSelectElement = document.querySelector('.note-panel__text')!;\r\n const notePanelError: HTMLParagraphElement = document.querySelector('.note-panel__error')!;\r\n \r\n-let selectedCategory, noteID: number | string;\r\n+let selectedCategory, noteID: number;\r\n \r\n const openNotePanel = () => {\r\n \tnotePanel.classList.remove('note-panel--hidden');\r\n };\r\n"
+                },
+                {
+                    "date": 1679945479454,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n \tconst newNote: HTMLDivElement = document.createElement('div');\r\n \tconst noteHeader: HTMLDivElement = document.createElement('div');\r\n \r\n \tnewNote.classList.add('note');\r\n-\tnewNote.setAttribute('data-id', noteID);\r\n+\tnewNote.setAttribute('data-id', noteID.toString);\r\n \r\n \tnewNote.append(noteHeader);\r\n \tnoteArea.append(newNote);\r\n };\r\n"
+                }
+            ],
+            "date": 1679945428073,
+            "name": "Commit-0",
+            "content": "const addNoteBtn: HTMLButtonElement = document.querySelector('.nav-buttons__add-btn')!;\r\nconst deleteAllNotesBtn: HTMLButtonElement = document.querySelector('.nav-buttons__delete-all-btn')!;\r\nconst saveNoteBtn: HTMLButtonElement = document.querySelector('.note-panel__buttons-save')!;\r\nconst cancelNoteBtn: HTMLButtonElement = document.querySelector('.note-panel__buttons-cancel')!;\r\nconst deleteNoteBtns: NodeListOf<HTMLButtonElement> = document.querySelectorAll('.note-header__delete-note')!;\r\n\r\nconst notePanel: HTMLDivElement = document.querySelector('.note-panel')!;\r\nconst notePanelCategory: HTMLSelectElement = document.querySelector('.note-panel__category')!;\r\nconst notePanelTextarea: HTMLSelectElement = document.querySelector('.note-panel__text')!;\r\nconst notePanelError: HTMLParagraphElement = document.querySelector('.note-panel__error')!;\r\n\r\nlet selectedCategory, noteID?: number | string;\r\n\r\nconst openNotePanel = () => {\r\n\tnotePanel.classList.remove('note-panel--hidden');\r\n};\r\n\r\nconst closeNotePanel = () => {\r\n\tnotePanel.classList.add('note-panel--hidden');\r\n\tnotePanelError.classList.add('note-panel__error--hidden');\r\n\tnotePanelTextarea.value = '';\r\n\tnotePanelCategory.selectedIndex = 0;\r\n};\r\nconst handleNote = () => {\r\n\tif (\r\n\t\tnotePanelTextarea.value !== '' &&\r\n\t\tNumber(notePanelCategory.options[notePanelCategory.selectedIndex].value) !== 0\r\n\t) {\r\n\t\tcreateNote();\r\n\t\tnotePanelError.classList.add('note-panel__error--hidden');\r\n\t} else {\r\n\t\tnotePanelError.classList.remove('note-panel__error--hidden');\r\n\t}\r\n};\r\n\r\nconst createNote = () => {\r\n\tconst noteArea: HTMLDivElement = document.querySelector('.note-area')!;\r\n\tconst newNote: HTMLDivElement = document.createElement('div');\r\n\tconst noteHeader: HTMLDivElement = document.createElement('div');\r\n\r\n\tnewNote.classList.add('note');\r\n\tnewNote.setAttribute('data-id', noteID);\r\n\r\n\tnewNote.append(noteHeader);\r\n\tnoteArea.append(newNote);\r\n};\r\n\r\naddNoteBtn.addEventListener('click', openNotePanel);\r\ncancelNoteBtn.addEventListener('click', closeNotePanel);\r\nsaveNoteBtn.addEventListener('click', handleNote);\r\n"
+        }
+    ]
+}
