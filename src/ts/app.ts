@@ -137,6 +137,18 @@ const loadStoragedNotes = () => {
 	newNote.forEach(note => note.addEventListener('click', deleteNote));
 };
 
+window.addEventListener('keyup', (e: KeyboardEvent) => {
+	if (e.key === 'Enter') {
+		addNote();
+	}
+});
+
+window.addEventListener('keyup', (e: KeyboardEvent) => {
+	if (e.key === 'Escape') {
+		closeNotePanel();
+	}
+});
+
 addNoteBtn.addEventListener('click', openNotePanel);
 cancelNoteBtn.addEventListener('click', closeNotePanel);
 saveNoteBtn.addEventListener('click', addNote);
