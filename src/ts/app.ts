@@ -138,13 +138,11 @@ const loadStoragedNotes = () => {
 };
 
 window.addEventListener('keyup', (e: KeyboardEvent) => {
-	if (e.key === 'Enter') {
-		addNote();
-	}
-});
+	const element = e.target as HTMLElement;
 
-window.addEventListener('keyup', (e: KeyboardEvent) => {
-	if (e.key === 'Escape') {
+	if (e.key === 'Enter' && element.tagName.toLowerCase() != 'textarea') {
+		addNote();
+	} else if (e.key === 'Escape' && element.tagName.toLowerCase() != 'textarea') {
 		closeNotePanel();
 	}
 });
